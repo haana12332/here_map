@@ -1,0 +1,11 @@
+[33mcommit 00dcbcc16c08d44dd80cd89be36692f7b8405fe3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Arai <araihotaka5@gmail.com>
+Date:   Sun Oct 6 14:54:13 2024 +0900
+
+    fin map
+
+[33mcommit 49ad436370bc9f6ae3f10c4aacf5c456ea3bf0d9[m
+Author: Arai <araihotaka5@gmail.com>
+Date:   Sun Oct 6 12:09:34 2024 +0900
+
+    Initialize project using Create React App
