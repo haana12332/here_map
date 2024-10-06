@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Map from "./Map";
+import Search from "./Search";
+import { useState } from "react";
+// .envファイルからAPIキーを取得
+const apikey = process.env.REACT_APP_API_KEY;
+console.log(apikey);
 
 function App() {
+  const [gps, setGps] = useState({
+    lat: "35.6814568602531",
+    lng: "139.76799772026422",
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Search apikey={apikey} onGeocodeResult={(query) => setGps(query)} />
+      <Map apikey={apikey} gps={gps} />
     </div>
   );
 }
